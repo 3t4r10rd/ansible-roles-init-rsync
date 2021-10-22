@@ -1,4 +1,6 @@
 ---
+rsync_dst: /etc/default/
+rsyncd_dst: /etc/
 dst_folder: /home/
-src_files: /home/1.txt
+src_file: /home/1.txt
 # defaults file for rsyncinit

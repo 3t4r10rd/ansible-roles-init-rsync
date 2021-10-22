@@ -1,6 +1,6 @@
 ---
 - name: maven configuration
-  hosts: all
+  hosts: all #add host in /etc/ansible/hosts
   become: yes
   
   roles:

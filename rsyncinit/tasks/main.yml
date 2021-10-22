@@ -20,7 +20,13 @@
    force: yes
   notify:
   - restart rsync
-  
+
+- name: Ensure that file for test is created
+  file:
+   path: /home/1.txt
+   state: file
+   
+
 - name: Test send file via synchronize
   synchronize:
    mode: push
