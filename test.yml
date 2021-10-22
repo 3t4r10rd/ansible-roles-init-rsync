@@ -1,0 +1,7 @@
+---
+- name: maven configuration
+  hosts: all
+  become: yes
+  
+  roles:
+  - rsyncinit
