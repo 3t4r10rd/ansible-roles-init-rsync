@@ -24,5 +24,5 @@
 - name: Test send file via synchronize
   synchronize:
    mode: push
-   dest: "{{ dest_war }}" #on server #need add "dest_war" in default/main.yml
-   src: "{{ src_war }}" #on local machine #need add "src_war" in default/main.yml
+   dest: "{{ dst_folder }}" #on server #add in default/main.yml
+   src: "{{ src_file }}" #on local machine #add in default/main.yml
