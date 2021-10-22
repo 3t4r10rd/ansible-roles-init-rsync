@@ -20,4 +20,9 @@
    force: yes
   notify:
   - restart rsync
-# tasks file for rsyncinit
+  
+- name: Test send file via synchronize
+  synchronize:
+   mode: push
+   dest: "{{ dest_war }}" #on server #need add "dest_war" in default/main.yml
+   src: "{{ src_war }}" #on local machine #need add "src_war" in default/main.yml
